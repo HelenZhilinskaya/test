@@ -1,7 +1,13 @@
 
 body{
     font-size: 18px;
-    font-family: 'Roboto'
+    font-family: 'Roboto';
+
+}
+
+.row{
+    margin-left: .5em;
+    margin-right: .5em
 }
 
 h1{
@@ -15,7 +21,7 @@ h2{
 }
 
 h3{
-    font-size: 28px;
+    font-size: 26px;
     margin-top: 0;
     line-height: 1.5;
 }
@@ -163,7 +169,7 @@ section form{
 
 .step{
     color: #eee;
-    min-height: 80px;
+    min-height: 100px;
 }
 
 
@@ -180,6 +186,12 @@ video{
    overflow:hidden;
 
 }
+
+.reviews img{
+     max-width: 100%;
+     height: auto
+ }
+
 .scrollToTop {
   width: 120px;
   z-index: 999;
@@ -205,6 +217,8 @@ video{
 input{
         margin-top: 0.5em;
 }
+
+
 
 
 @media screen and (max-width: 768px){
