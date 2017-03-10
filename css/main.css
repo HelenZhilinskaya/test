@@ -33,6 +33,11 @@ li{
     color: #eee
 }
 
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-brand:hover{
+    color: #ff9800;
+}
+
 .navbar-default{
     background-color: #424f58;
     border-color:#424f58;
@@ -175,4 +180,43 @@ video{
    overflow:hidden;
 
 }
+.scrollToTop {
+  width: 120px;
+  z-index: 999;
+  padding: 5px;
+  text-align: center;
+  background: whiteSmoke;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  position: fixed;
+  top: 75px;
+  display: none;
+  right: 40px;
+  border-radius: 0.5em
+}
 
+.scrollToTop:hover,
+.scrollToTop:focus {
+  color: #555;
+  text-decoration: none;
+}
+
+input{
+        margin-top: 0.5em;
+}
+
+
+@media screen and (max-width: 768px){
+    h1{
+    font-size: 25px
+}
+
+h2{
+    font-size: 22px
+}
+h3{
+    font-size: 20px
+}
+
+}
