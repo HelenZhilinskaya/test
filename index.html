@@ -35,12 +35,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/magnific_popup.css">
 
-  <!-- jQuery JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </head>
 
@@ -56,7 +51,7 @@
 <div class="col-md-7"><h1>Изготовление и установка металлических дверей в Минске </h1></div>
 <div class="col-md-2"><h4>8(029) 733-38-18<br>8(029) 614-02-22</h4> <h5>С 8:00 до 21:00. <br> Без выходных</h5></div>
 <div class="col-md-1"><button data-toggle="modal" data-target="#call" type="button" class="btn btn-danger">ЗАКАЗАТЬ ЗВОНОК</button></div>
-   
+   <a href="#" class="scrollToTop"><span class="glyphicon glyphicon-triangle-top"></span> НАВЕРХ</a>
 </div>
 </div>
 
@@ -339,14 +334,6 @@
 <section id="howto" class="howto">
   <div class="container text-center mt-2">
 <h2 class="mb-2">КАК МЫ РАБОТАЕМ</h2>
-<div class="row">
-  <div class="col-md-2">1</div>
-  <div class="col-md-2">2</div>
-  <div class="col-md-2">3</div>
-  <div class="col-md-2">4</div>
-  <div class="col-md-2">5</div>
-  <div class="col-md-2">6</div>
-</div>
 
 
 <div class="row">
@@ -373,7 +360,7 @@
 <section id="video">
 <div class="mt-5">
 <video id=video_player controls>
- <source src="images/video.1.mp4" type="video/mp4" />
+ <source src="/images/video.1.mp4" type="video/mp4" />
  <source src=" video/demo.webm" type="video/webm"/>
  <source src=" video/demo.ogv" type="video/ogg"/>
  Формат не поддерживается 
@@ -500,7 +487,12 @@
       </div>
     </div>
 
+  <!-- jQuery JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <!-- jQuery Plugins -->
   <script src="js/inviewport.js"></script>
@@ -571,6 +563,29 @@
     	});
 });
  </script>
+
+<script>
+  $(document).ready(function(){
+    	
+    	$(window).scroll(function(){
+    		if ($(this).scrollTop() > 100) {
+    			$('.scrollToTop').fadeIn();
+    		} else {
+    			$('.scrollToTop').fadeOut();
+    		}
+    	});
+    	
+    	$('.scrollToTop').click(function(){
+    		$('html, body').animate({scrollTop : 0},800);
+    		return false;
+    	});
+    	
+    });
+
+
+
+
+</script>
 
 
 </body>
